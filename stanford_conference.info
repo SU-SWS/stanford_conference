@@ -17,6 +17,7 @@ dependencies[] = strongarm
 dependencies[] = subpathauto
 dependencies[] = text
 dependencies[] = views
+stylesheets[all][] = css/stanford-conference.css
 features[context][] = conference_agenda
 features[context][] = conference_overview
 features[ctools][] = context:context:3
