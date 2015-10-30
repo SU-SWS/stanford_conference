@@ -11,6 +11,86 @@ function stanford_conference_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'conference_contact_info';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Conference: Contact Info';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Contact';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Content: Phone */
+  $handler->display->display_options['fields']['field_s_conference_phone']['id'] = 'field_s_conference_phone';
+  $handler->display->display_options['fields']['field_s_conference_phone']['table'] = 'field_data_field_s_conference_phone';
+  $handler->display->display_options['fields']['field_s_conference_phone']['field'] = 'field_s_conference_phone';
+  $handler->display->display_options['fields']['field_s_conference_phone']['label'] = '';
+  $handler->display->display_options['fields']['field_s_conference_phone']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_conference_phone']['alter']['text'] = '<strong>Phone:</strong> [field_s_conference_phone]';
+  $handler->display->display_options['fields']['field_s_conference_phone']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_conference_phone']['hide_empty'] = TRUE;
+  /* Field: Content: Email */
+  $handler->display->display_options['fields']['field_s_conference_email']['id'] = 'field_s_conference_email';
+  $handler->display->display_options['fields']['field_s_conference_email']['table'] = 'field_data_field_s_conference_email';
+  $handler->display->display_options['fields']['field_s_conference_email']['field'] = 'field_s_conference_email';
+  $handler->display->display_options['fields']['field_s_conference_email']['label'] = '';
+  $handler->display->display_options['fields']['field_s_conference_email']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_s_conference_email']['alter']['text'] = '<strong>Email:</strong> <a href="mailto:[field_s_conference_email]">[field_s_conference_email]</a>';
+  $handler->display->display_options['fields']['field_s_conference_email']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_conference_email']['hide_empty'] = TRUE;
+  /* Field: Content: Contact URL */
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['id'] = 'field_s_conference_contact_url';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['table'] = 'field_data_field_s_conference_contact_url';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['field'] = 'field_s_conference_contact_url';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['label'] = '';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['element_type'] = 'div';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['element_wrapper_type'] = 'div';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['element_wrapper_class'] = 'more-link';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_s_conference_contact_url']['separator'] = '<br />';
+  /* Contextual filter: Content: Nid */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'node';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'node';
+  $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'stanford_conference_overview' => 'stanford_conference_overview',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $export['conference_contact_info'] = $view;
+
+  $view = new view();
   $view->name = 'conference_image';
   $view->description = '';
   $view->tag = 'default';
