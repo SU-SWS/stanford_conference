@@ -101,6 +101,7 @@ features[variable][] = node_submitted_stanford_conference_overview
 features[variable][] = node_submitted_stanford_conference_session
 features[variable][] = pathauto_node_stanford_conference_overview_pattern
 features[variable][] = pathauto_node_stanford_conference_session_pattern
+features[views_view][] = conference_image
 features[views_view][] = conference_link_to_overview
 features[views_view][] = conference_session_agenda
 features[views_view][] = conference_sponsors
