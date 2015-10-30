@@ -81,7 +81,6 @@ features[field_instance][] = node-stanford_conference_overview-field_s_conferenc
 features[field_instance][] = node-stanford_conference_overview-field_s_conference_phone
 features[field_instance][] = node-stanford_conference_overview-field_s_conference_reg_link
 features[field_instance][] = node-stanford_conference_overview-field_s_conference_sponsors
-features[field_instance][] = node-stanford_conference_session-body
 features[field_instance][] = node-stanford_conference_session-field_s_session_conference
 features[field_instance][] = node-stanford_conference_session-field_s_session_date_time
 features[field_instance][] = node-stanford_conference_session-field_s_session_speaker
