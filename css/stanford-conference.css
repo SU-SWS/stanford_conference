@@ -1,4 +1,4 @@
-.page-node .content-body .field-name-field-s-conference-date {
+.page-node .content-body .field.field-name-field-s-conference-date {
     margin-bottom: .5em;
 }
 
@@ -23,12 +23,12 @@
 
 /* BASIC-1550 */
 
-.page-node .content-body .field-name-field-s-speaker-topic {
+.page-node .content-body .field.field-name-field-s-speaker-topic {
     margin-bottom: 0.2em;
     font-weight: 600;
 }
 
-.page-node .content-body .field-name-field-s-speaker-name {
+.page-node .content-body .field.field-name-field-s-speaker-name {
     font-size: 1.1em;
     margin-bottom: 0.2em;
     font-weight: 600;
@@ -59,15 +59,15 @@
     padding-bottom: 0;
 }
 
-.page-node .content-body .field-name-field-s-speaker-file-upload {
+.page-node .content-body .field.field-name-field-s-speaker-file-upload {
     margin-bottom: 0;
 }
 
-.page-node .content-body .field-name-field-s-speaker-description p {
+.page-node .content-body .field.field-name-field-s-speaker-description p {
     margin-bottom: 0;
 }
 
-.page-node .content-body .field-name-field-s-speaker-description {
+.page-node .content-body .field.field-name-field-s-speaker-description {
     margin-bottom: 0.2em;
 }
 
