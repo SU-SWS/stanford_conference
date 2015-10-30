@@ -68,15 +68,15 @@ function stanford_conference_context_default_contexts() {
           'region' => 'content_lower',
           'weight' => '-10',
         ),
-        'ds_extras-s_conference_image_block' => array(
-          'module' => 'ds_extras',
-          'delta' => 's_conference_image_block',
+        'views-conference_image-block' => array(
+          'module' => 'views',
+          'delta' => 'conference_image-block',
           'region' => 'sidebar_second',
-          'weight' => '-9',
+          'weight' => '-10',
         ),
-        'ds_extras-contact' => array(
-          'module' => 'ds_extras',
-          'delta' => 'contact',
+        'views-conference_contact_info-block' => array(
+          'module' => 'views',
+          'delta' => 'conference_contact_info-block',
           'region' => 'sidebar_second',
           'weight' => '-8',
         ),
