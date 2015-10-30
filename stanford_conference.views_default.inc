@@ -110,12 +110,17 @@ function stanford_conference_views_default_views() {
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Field: Broken/missing handler */
-  $handler->display->display_options['fields']['field_conference_image']['id'] = 'field_conference_image';
-  $handler->display->display_options['fields']['field_conference_image']['table'] = 'field_data_field_conference_image';
-  $handler->display->display_options['fields']['field_conference_image']['field'] = 'field_conference_image';
-  $handler->display->display_options['fields']['field_conference_image']['label'] = '';
-  $handler->display->display_options['fields']['field_conference_image']['element_label_colon'] = FALSE;
+  /* Field: Content: Conference Image */
+  $handler->display->display_options['fields']['field_s_conference_image']['id'] = 'field_s_conference_image';
+  $handler->display->display_options['fields']['field_s_conference_image']['table'] = 'field_data_field_s_conference_image';
+  $handler->display->display_options['fields']['field_s_conference_image']['field'] = 'field_s_conference_image';
+  $handler->display->display_options['fields']['field_s_conference_image']['label'] = '';
+  $handler->display->display_options['fields']['field_s_conference_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_s_conference_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_s_conference_image']['settings'] = array(
+    'image_style' => 'large-scaled',
+    'image_link' => '',
+  );
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
@@ -345,7 +350,7 @@ function stanford_conference_views_default_views() {
   $handler->display->display_options['fields']['edit_node']['element_wrapper_class'] = 'edit-link';
   $handler->display->display_options['fields']['edit_node']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['edit_node']['text'] = 'Edit Session';
-  /* Sort criterion: Content: Date and Time (field_s_session_date_time) */
+  /* Sort criterion: Content: Date and Time -  start date (field_s_session_date_time) */
   $handler->display->display_options['sorts']['field_s_session_date_time_value']['id'] = 'field_s_session_date_time_value';
   $handler->display->display_options['sorts']['field_s_session_date_time_value']['table'] = 'field_data_field_s_session_date_time';
   $handler->display->display_options['sorts']['field_s_session_date_time_value']['field'] = 'field_s_session_date_time_value';
@@ -548,7 +553,7 @@ function stanford_conference_views_default_views() {
       </div>
 <div class="edit-link">[edit_node]</div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
-  /* Sort criterion: Content: Date and Time (field_s_conference_date) */
+  /* Sort criterion: Content: Date and Time -  start date (field_s_conference_date) */
   $handler->display->display_options['sorts']['field_s_conference_date_value']['id'] = 'field_s_conference_date_value';
   $handler->display->display_options['sorts']['field_s_conference_date_value']['table'] = 'field_data_field_s_conference_date';
   $handler->display->display_options['sorts']['field_s_conference_date_value']['field'] = 'field_s_conference_date_value';
