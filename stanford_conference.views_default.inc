@@ -252,7 +252,7 @@ function stanford_conference_views_default_views() {
     0 => array(
       'field' => 'field_s_session_date_time',
       'rendered' => 1,
-      'rendered_strip' => 0,
+      'rendered_strip' => 1,
     ),
   );
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
@@ -280,7 +280,6 @@ function stanford_conference_views_default_views() {
   $handler->display->display_options['fields']['field_s_session_date_time']['ui_name'] = 'Session Date';
   $handler->display->display_options['fields']['field_s_session_date_time']['label'] = '';
   $handler->display->display_options['fields']['field_s_session_date_time']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_s_session_date_time']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_s_session_date_time']['alter']['text'] = '<h2>[field_s_session_date_time]</h2>';
   $handler->display->display_options['fields']['field_s_session_date_time']['element_type'] = 'h2';
   $handler->display->display_options['fields']['field_s_session_date_time']['element_label_colon'] = FALSE;
