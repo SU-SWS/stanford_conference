@@ -7,6 +7,8 @@ Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.c
 
 This module delivers a lightweight conference scheduling and display functionality. It includes two content types: Conference Overview and Conference Session. An Agenda page view is populated automatically when a Conference Session is entity referenced to a Conference Overview.
 
+There is also a view at /conferences that lists all Conferences in reverse chronological order.
+
 Installation
 ---
 
@@ -23,8 +25,6 @@ Troubleshooting
 ---
 
 If you are experiencing issues with this module try reverting the feature first. If you are still experiencing issues try posting an issue on the GitHub issues page.
-
-* There is a known bug as of Halloween 2015 that the Date groupings on the Agenda need to be revised to be h2s. This is on the short-term roadmap for this feature.
 
 Contribution / Collaboration
 ---
