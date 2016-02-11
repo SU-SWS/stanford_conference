@@ -9,6 +9,13 @@
   padding: 3px 0 0 12px;
 }
 
+.style-custom-styles-dark .field-name-field-s-conference-map-link a {
+  background-image: url("../img/small-white-map-icon.png");
+  background-position: 0 center;
+  background-repeat: no-repeat;
+  padding: 3px 0 0 12px;
+}
+
 .field-name-field-s-sponsor-name {
   font-weight: 600;
 }
