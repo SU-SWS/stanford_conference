@@ -14,6 +14,9 @@ Installation
 
 Install this module like any other module. [See Drupal Documentation](https://drupal.org/documentation/install/modules-themes/modules-7)
 
+For issues with the wrong theme being loaded please review this patch:
+https://www.drupal.org/files/issues/subpathauto-1814516-42.patch
+
 Configuration
 ---
 
@@ -25,6 +28,9 @@ Troubleshooting
 ---
 
 If you are experiencing issues with this module try reverting the feature first. If you are still experiencing issues try posting an issue on the GitHub issues page.
+
+For issues with the wrong theme being loaded please review this patch:
+https://www.drupal.org/files/issues/subpathauto-1814516-42.patch
 
 Contribution / Collaboration
 ---
