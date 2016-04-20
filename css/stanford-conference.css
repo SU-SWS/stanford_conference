@@ -11,9 +11,10 @@
 
 .style-custom-styles-dark .field-name-field-s-conference-map-link a {
   background-image: url("../img/small-white-map-icon.png");
-  background-position: 0 center;
-  background-repeat: no-repeat;
-  padding: 3px 0 0 12px;
+}
+
+.style-custom-styles-vivid .field-name-field-s-conference-map-link a {
+  background-image: url("../img/small-dark-map-icon.png");
 }
 
 .field-name-field-s-sponsor-name {
@@ -27,9 +28,6 @@
 .view-conference-sponsors .views-row {
   margin-bottom: 1em;
 }
-
-
-/* BASIC-1550 */
 
 .page-node .content-body .field.field-name-field-s-speaker-topic {
   margin-bottom: 0.2em;
@@ -94,4 +92,9 @@
 .style-custom-styles-dark .view-conference-session-agenda .view-content h2 {
   background: #fbfbf9;
   color: #2e2d29;
+}
+
+.style-custom-styles-vivid .view-conference-session-agenda .view-content h2 {
+  background: #f2f3f4;
+  color: #0f6c91;
 }
