@@ -1,5 +1,5 @@
 #[Stanford Conference](https://github.com/SU-SWS/stanford_conference)
-##### Version: 7.x-1.0-beta1
+##### Version: 7.x-1.0-dev
 
 Maintainers: [jbickar](https://github.com/jbickar), [sherakama](https://github.com/sherakama)
 
