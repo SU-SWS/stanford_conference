@@ -12,6 +12,6 @@
   ],
   "require": {
       "composer/installers": "^1.2",
-      "drupal/subpathauto": "~7.1"
+      "drupal/subpathauto": "~1.0"
   }
 }
